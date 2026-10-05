@@ -42,10 +42,12 @@
 
 ## 月次の更新手順
 
-1. `report.html` を `assets/archive/YYYY-MM.html` などへ複製し、`library.html` の「過去の月次レポート」に行を足す。
+1. `report.html` を `archive/YYYY-MM.html` へ複製し、`library.html` の「過去の月次レポート」に行を足す。
 2. `report.html` を当月号の内容に書き換える。図版は `assets/img/` に置く。
 3. `index.html` の「お知らせ一覧」に1行足す。
 4. `main` に反映する。
+
+詳しい手順はスキル `monthly-report`（`.claude/skills/monthly-report/SKILL.md`）にある。
 
 ## このデモで動かないもの
 
