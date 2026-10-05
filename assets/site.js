@@ -6,7 +6,7 @@ const NAV = [
   ['/company', '会社概要'],
 ];
 // 次期以降に作るページ。名前だけ出し、リンクは張らない。
-const SOON = ['Q＆A', '株主手続き'];
+const SOON = ['Q&A', '株主手続き'];
 const here = location.pathname.replace(/\.html$/, '').replace(/\/index$/, '/') || '/';
 const head = document.getElementById('site-head');
 if (head) {
