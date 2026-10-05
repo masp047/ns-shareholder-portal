@@ -19,6 +19,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .nav a{text-decoration:none;color:#fff;padding:6px 0;border-bottom:2px solid transparent}
 .nav a:hover{border-bottom-color:var(--line)}
 .nav a[aria-current="page"]{font-weight:700;border-bottom-color:var(--red)}
+.nav .soon{color:#fff;padding:6px 0;border-bottom:2px solid transparent;cursor:default}
 .nav a.out{color:var(--line);font-family:var(--sans);font-size:13px}
 main{max-width:1120px;margin:0 auto;padding:56px 24px 88px}
 main.narrow{max-width:860px}

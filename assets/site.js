@@ -5,6 +5,8 @@ const NAV = [
   ['/library', '資料室'],
   ['/company', '会社概要'],
 ];
+// 次期以降に作るページ。名前だけ出し、リンクは張らない。
+const SOON = ['Q&A', '株主手続き'];
 const here = location.pathname.replace(/\.html$/, '').replace(/\/index$/, '/') || '/';
 const head = document.getElementById('site-head');
 if (head) {
@@ -12,6 +14,7 @@ if (head) {
   head.innerHTML =
     '<div class="in"><a class="brand" href="/">日本信達 株主専用ポータル<small>SHAREHOLDER PORTAL</small></a><nav class="nav" aria-label="主ナビ">' +
     NAV.map(([p, t]) => `<a href="${p}"${p === here ? ' aria-current="page"' : ''}>${t}</a>`).join('') +
+    SOON.map((t) => `<span class="soon">${t}</span>`).join('') +
     '<a class="out" href="/logout">ログアウト</a></nav></div>';
 }
 const foot = document.getElementById('site-foot');
