@@ -42,8 +42,9 @@ export default async function middleware(request) {
     });
   }
 
+  // ログアウト後はコーポレートサイトへ戻す。
   if (path === '/logout') {
-    return redirect(url, '/login', [`ns_auth=; Max-Age=0; ${cookieAttr}`, `ns_admin=; Max-Age=0; ${cookieAttr}`]);
+    return redirect(url, 'https://xb014135.xbiz.jp/ja/', [`ns_auth=; Max-Age=0; ${cookieAttr}`, `ns_admin=; Max-Age=0; ${cookieAttr}`]);
   }
 
   if (path === '/auth' && request.method === 'POST') {
