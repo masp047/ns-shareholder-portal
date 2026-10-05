@@ -1,7 +1,8 @@
 # 公開しないファイル。入口の防御とは別に、そもそもVercelへ上げない。
-CLAUDE.md
-README.md
-docs/
-tools/
-.claude/
-assets/docs/README.md
+# 先頭の / で直下だけに限る（assets/docs/ のPDFを巻き込まないため）。
+/CLAUDE.md
+/README.md
+/docs/
+/tools/
+/.claude/
+/assets/docs/README.md
