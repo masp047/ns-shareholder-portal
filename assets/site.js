@@ -12,7 +12,7 @@ const head = document.getElementById('site-head');
 if (head) {
   head.className = 'site-head';
   head.innerHTML =
-    '<div class="in"><a class="brand" href="/"><img class="logo" src="/assets/logo/shintatsu-white.png" width="267" height="38" alt="日本信達株式会社 SHINTATSU"><span>株主専用ポータル<small>SHAREHOLDER PORTAL</small></span></a><nav class="nav" aria-label="主ナビ">' +
+    '<div class="in"><a class="brand" href="/"><img class="logo" src="/assets/logo/shintatsu-white.png" width="267" height="38" alt="日本信達株式会社 SHINTATSU"></a><nav class="nav" aria-label="主ナビ">' +
     NAV.map(([p, t]) => `<a href="${p}"${p === here ? ' aria-current="page"' : ''}>${t}</a>`).join('') +
     SOON.map((t) => `<span class="soon">${t}</span>`).join('') +
     '<a class="out" href="/logout">ログアウト</a></nav></div>';
