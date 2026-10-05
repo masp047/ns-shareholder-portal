@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>管理画面ログイン｜日本信達 株主専用ポータル</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Inter:wght@400;600&display=swap">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<main class="narrow">
+<p class="eyebrow">ADMIN</p>
+<h1>管理画面ログイン</h1>
+<p>事務局専用です。管理用の合言葉を入力してください。</p>
+<p class="err" id="err" hidden>合言葉が違います。もう一度入力してください。</p>
+<form class="gate" method="post" action="/auth">
+  <input type="hidden" name="kind" value="admin">
+  <div class="field"><label for="passphrase">管理用の合言葉</label><input id="passphrase" name="passphrase" type="password" required autocomplete="off"></div>
+  <button type="submit">ログイン</button>
+</form>
+<script>if (new URLSearchParams(location.search).get('e')) document.getElementById('err').hidden = false;</script>
+</main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>管理画面｜日本信達 株主専用ポータル</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Inter:wght@400;600&display=swap">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<main class="narrow">
+<p class="eyebrow">ADMIN</p>
+<h1>管理画面<span class="demo">画面の形のみ</span></h1>
+<p class="note">このデモでは、入力内容の保存とログイン履歴の記録は動きません。画面の形を確かめるためのものです。</p>
+<h2>月次簡易入力</h2>
+<form onsubmit="event.preventDefault();document.getElementById('saved').hidden=false">
+  <div class="field"><label for="m">対象月</label><input id="m" type="month" value="2026-10"></div>
+  <div class="field"><label for="s">章</label><select id="s"><option>社長メッセージ</option><option>プロジェクト紹介</option><option>新しい芽</option><option>最新ニュース</option></select></div>
+  <div class="field"><label for="t">見出し</label><input id="t" type="text"></div>
+  <div class="field"><label for="b">本文</label><textarea id="b"></textarea></div>
+  <button type="submit">下書きを保存</button>
+  <p class="note" id="saved" hidden>デモのため保存はしていません。</p>
+</form>
+<h2>株主ログイン履歴<span class="demo">サンプル</span></h2>
+<div class="tscroll"><table>
+  <tr><th>日時</th><th>株主</th><th>結果</th></tr>
+  <tr><td>YYYY.MM.DD 10:00</td><td>［株主を見分ける情報］</td><td>成功</td></tr>
+  <tr><td>YYYY.MM.DD 09:41</td><td>—</td><td>失敗（合言葉の誤り）</td></tr>
+</table></div>
+<p class="note">株主別の履歴を取るには、ログイン方式の決定が要ります。合言葉が全員共通のあいだは、誰が入ったかは分かりません。</p>
+<p><a href="/logout">ログアウト</a></p>
+</main>
+<footer id="site-foot"></footer>
+
+</body>
+</html>
