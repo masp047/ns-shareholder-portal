@@ -6,7 +6,7 @@ const NAV = [
   ['/company', '会社概要'],
 ];
 // 次期以降に作るページ。名前だけ出し、リンクは張らない。
-const SOON = ['Q&A', '株主手続き'];
+const SOON = ['Q＆A', '株主手続き'];
 const here = location.pathname.replace(/\.html$/, '').replace(/\/index$/, '/') || '/';
 const head = document.getElementById('site-head');
 if (head) {
@@ -21,5 +21,5 @@ const foot = document.getElementById('site-foot');
 if (foot) {
   foot.className = 'site-foot';
   foot.innerHTML =
-    '<div class="in">本ポータルの内容は株主限りです。転送・転載を禁じます。｜<a href="/disclaimer">将来予測に関する注意事項</a><br>日本信達株式会社</div>';
+    '<div class="in">本ポータルの内容は株主限りです。転送・転載を禁じます。｜<a href="/disclaimer">免責事項はこちら</a><br>日本信達株式会社</div>';
 }
