@@ -1,0 +1,7 @@
+# 公開しないファイル。入口の防御とは別に、そもそもVercelへ上げない。
+CLAUDE.md
+README.md
+docs/
+tools/
+.claude/
+assets/docs/README.md
